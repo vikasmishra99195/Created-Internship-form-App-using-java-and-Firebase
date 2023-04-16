@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230727818930",
+    "project_id": "databaseinterns",
+    "storage_bucket": "databaseinterns.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230727818930:android:7c6902344b218128c5b3ab",
+        "android_client_info": {
+          "package_name": "com.example.databaseinterns"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230727818930-k22dalo0bntoeqqda4u3a0keoqlaiij2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvKkzzHzOF9vgMlv9fUvwblNX8bHr7Wt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230727818930-k22dalo0bntoeqqda4u3a0keoqlaiij2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
