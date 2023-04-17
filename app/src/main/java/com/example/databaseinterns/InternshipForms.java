@@ -43,6 +43,7 @@ public class InternshipForms extends AppCompatActivity {
             public void onClick(View v) {
 
                 // Hash Map used to store multiple data in firebase
+
                 HashMap<String, Object> intern= new HashMap<String, Object>();
                 intern.put("fullname",fullname.getText().toString());
                 intern.put("contact", phonenumber.getText().toString());

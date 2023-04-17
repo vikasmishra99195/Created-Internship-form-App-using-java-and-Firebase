@@ -27,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         formbutton = findViewById(R.id.formbtn);
-        login = findViewById(R.id.accountuser);
         formbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

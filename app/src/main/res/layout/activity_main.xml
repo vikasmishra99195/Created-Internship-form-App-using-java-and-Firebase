@@ -9,8 +9,8 @@
     <RelativeLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
-        android:background="#000000">
+        android:layout_height="@dimen/_33sdp"
+        android:background="@color/black">
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -21,6 +21,17 @@
             android:contentDescription="TODO"
             android:src="@drawable/baseline_menu_24"
             tools:ignore="TouchTargetSizeCheck"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Welcome"
+            android:textSize="@dimen/_22sdp"
+            android:fontFamily="@font/cookie"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:layout_marginEnd="@dimen/_3sdp"/>
 
     </RelativeLayout>
 
@@ -86,16 +97,19 @@
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/_20sdp"
         android:layout_centerHorizontal="true">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Internship Form"
-            android:textSize="@dimen/_14sdp"
-            android:textColor="@color/white"
-            android:padding="@dimen/_10sdp"
-            android:fontFamily="sans-serif-black"
             android:layout_gravity="center_vertical"
-            android:background="#000000"/>
+            android:background="#000000"
+            android:fontFamily="@font/average"
+            android:padding="@dimen/_10sdp"
+            android:text="Internship Form"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
     </androidx.cardview.widget.CardView>
 
 
