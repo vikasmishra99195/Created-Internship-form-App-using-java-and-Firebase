@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
@@ -41,12 +42,15 @@ public class InternshipForms extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                // Hash Map used to store multiple data in firebase
                 HashMap<String, Object> intern= new HashMap<String, Object>();
                 intern.put("fullname",fullname.getText().toString());
                 intern.put("contact", phonenumber.getText().toString());
                 intern.put("email",email.getText().toString());
                 intern.put("whyShouldWeHireYou",whyHireEdtText.getText().toString());
                 FirebaseDatabase.getInstance().getReference().child("intern").push().setValue(intern);
+
+                Toast.makeText(InternshipForms.this, "Form Submitted", Toast.LENGTH_SHORT).show();
 
 //                FirebaseDatabase.getInstance().getReference().child("Intern 1").setValue("Vikas Mishra");
             }

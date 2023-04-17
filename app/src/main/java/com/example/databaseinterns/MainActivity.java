@@ -10,12 +10,14 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.Window;
+import android.widget.ImageButton;
 
 import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
     CardView formbutton;
+    ImageButton login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         formbutton = findViewById(R.id.formbtn);
+        login = findViewById(R.id.accountuser);
         formbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

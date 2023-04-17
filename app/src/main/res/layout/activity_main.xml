@@ -6,73 +6,77 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
-        android:background="#000000"
-        android:orientation="horizontal">
+        android:background="#000000">
 
         <ImageButton
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/_10sdp"
             android:background="#00000000"
             android:contentDescription="TODO"
             android:src="@drawable/baseline_menu_24"
-            tools:ignore="TouchTargetSizeCheck" />
+            tools:ignore="TouchTargetSizeCheck"/>
 
+    </RelativeLayout>
 
-    </LinearLayout>
-
-    <ImageView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
-        android:src="@drawable/circle_shape"
-        android:layout_below="@+id/layout"
-        android:layout_marginTop="@dimen/_116sdp"
-        />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout">
 
-
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_130sdp"
-        android:layout_marginTop="@dimen/_6sdp"
-        android:layout_below="@+id/layout"
-        android:background="@color/white"/>
-
-
-    <ViewFlipper
-        android:id="@+id/flipper"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_130sdp"
-        android:layout_marginLeft="@dimen/_3sdp"
-        android:layout_marginTop="@dimen/_3sdp"
-        android:layout_marginRight="@dimen/_3sdp"
-        android:flipInterval="2500"
-        android:layout_below="@+id/layout"
-        android:autoStart="true"
-        android:inAnimation="@android:anim/slide_in_left"
-        android:outAnimation="@android:anim/slide_out_right">
-        <ImageView
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/dz1" />
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/dz2" />
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/dz3" />
-    </ViewFlipper>
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/shape1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:src="@drawable/circle_shape"
+                android:layout_marginTop="@dimen/_116sdp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:background="@color/white"
+                android:layout_marginStart="@dimen/_3sdp"
+                android:layout_marginEnd="@dimen/_3sdp"/>
 
 
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginLeft="@dimen/_3sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:flipInterval="2500"
+                android:autoStart="true"
+                android:inAnimation="@android:anim/slide_in_left"
+                android:outAnimation="@android:anim/slide_out_right">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dz1" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dz2" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dz3" />
+            </ViewFlipper>
 
-
+        </RelativeLayout>
+    </ScrollView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/formbtn"
